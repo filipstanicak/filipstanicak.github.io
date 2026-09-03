@@ -3,23 +3,38 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Filip Stanicak — Senior Consultant | Business Analyse &amp; Agile Delivery</title>
+<title>Filip Stanicak, Senior Consultant | Business Analyse &amp; Agile Delivery</title>
 <meta name="description" content="Senior Consultant für Business Analyse, Prozessdesign und agile Delivery. Baut Release- und Testmanagement, Vorgehensmodelle und KPI-Systeme dort auf, wo es sie vorher nicht gab. Seit 2019 im Automotive-Umfeld.">
 <meta name="author" content="Filip Stanicak">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://filipstanicak.github.io/">
 
 <meta property="og:type" content="profile">
-<meta property="og:title" content="Filip Stanicak — Senior Consultant">
+<meta property="og:title" content="Filip Stanicak, Senior Consultant">
 <meta property="og:description" content="Baut Release- und Testmanagement, Vorgehensmodelle und KPI-Systeme dort auf, wo es sie vorher nicht gab. Business Analyst, Scrum Master und Lead Consultant.">
 <meta property="og:locale" content="de_DE">
 <meta property="og:image" content="https://filipstanicak.github.io/assets/portrait.jpg">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2314181d'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='52' fill='%23e0b48f' text-anchor='middle'%3EFS%3C/text%3E%3C/svg%3E">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/inter-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/newsreader-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* Schriften lokal eingebunden: kein Request an Google, keine IP-Uebertragung
+   an Dritte (DSGVO), und kein externer Font-Host als Single Point of Failure. */
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;
+  src:url('assets/fonts/inter-normal-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;
+  src:url('assets/fonts/inter-normal-500-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;
+  src:url('assets/fonts/inter-normal-600-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;
+  src:url('assets/fonts/inter-normal-700-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Newsreader';font-style:italic;font-weight:400;font-display:swap;
+  src:url('assets/fonts/newsreader-italic-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:400;font-display:swap;
+  src:url('assets/fonts/newsreader-normal-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+</style>
 
 <style>
 /* ============================================================
@@ -209,7 +224,7 @@ main > section[id], main > header[id]{scroll-margin-top:var(--nav-h)}
   font-size:clamp(2.75rem,7vw,4.5rem);line-height:1.02;letter-spacing:-.02em;
 }
 .hero__role{
-  margin-top:14px;font-size:clamp(1.0625rem,2.2vw,1.3125rem);font-weight:500;color:var(--ink-2);
+  margin-top:14px;line-height:1.35;font-size:clamp(1.0625rem,2.2vw,1.3125rem);font-weight:500;color:var(--ink-2);
 }
 .hero__role em{font-family:var(--serif);font-style:italic;color:var(--accent-ink);font-weight:400}
 .hero__lead{
@@ -249,10 +264,7 @@ main > section[id], main > header[id]{scroll-margin-top:var(--nav-h)}
 .section--sunk{background:var(--bg-sunk)}
 @media (max-width:700px){.section{padding:54px 0}}
 .section__head{margin-bottom:38px}
-.section__kicker{
-  font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);
-}
-.section__title{margin-top:10px;font-size:clamp(1.5rem,3.4vw,2rem);font-weight:600}
+.section__title{font-size:clamp(1.5rem,3.4vw,2rem);font-weight:600}
 .section__sub{margin-top:12px;max-width:62ch;color:var(--ink-2);font-size:.9688rem}
 
 /* ============================================================
@@ -506,7 +518,7 @@ main > section[id], main > header[id]{scroll-margin-top:var(--nav-h)}
     <div>
     <div class="hero__eyebrow" data-en="Building what isn&#x27;t there yet">Aufbauen, wo noch nichts steht</div>
     <h1 class="hero__name">Filip Stanicak</h1>
-    <p class="hero__role">Senior Consultant — <em data-en="Business Analysis, Process Design &amp; Agile Delivery">Business Analyse, Prozessdesign &amp; Agile Delivery</em></p>
+    <p class="hero__role">Senior Consultant<br><em data-en="Business Analysis, Process Design &amp; Agile Delivery">Business Analyse, Prozessdesign &amp; Agile Delivery</em></p>
 
     <p class="hero__lead" data-en="Across eight client projects the task was almost always the same: build a capability that did not exist before. Release management where releases ran unsteered. Test management where testing was nobody&#x27;s job. A delivery framework for two merged organisations that had none. A KPI system where estimates rested on gut feel.">
       In acht Kundenprojekten war die Aufgabe fast immer dieselbe: eine Funktion aufbauen, die es
@@ -514,9 +526,9 @@ main > section[id], main > header[id]{scroll-margin-top:var(--nav-h)}
       niemandes Aufgabe war. Ein Vorgehensmodell für zwei fusionierte Organisationen, die keines
       hatten. Ein KPI-System, wo nach Bauchgefühl geschätzt wurde.
     </p>
-    <p class="hero__lead" data-en="In automotive since 2019, in consulting since 2021 — as a business analyst, scrum master and lead consultant. Across scaled and regulated development environments, from the customer app to the ECU. On the side, I build the tools this work leaves me missing.">
-      Seit 2019 im Automotive-Umfeld, seit 2021 in der Beratung — als Business Analyst, Scrum Master
-      und Lead Consultant. In skalierten und regulierten Entwicklungsumgebungen, von der Kunden-App
+    <p class="hero__lead" data-en="In automotive since 2019, in consulting since 2021. As a business analyst, scrum master and lead consultant across scaled and regulated development environments, from the customer app to the ECU. On the side, I build the tools this work leaves me missing.">
+      Seit 2019 im Automotive-Umfeld, seit 2021 in der Beratung. Als Business Analyst, Scrum Master
+      und Lead Consultant in skalierten und regulierten Entwicklungsumgebungen, von der Kunden-App
       bis zum Steuergerät. Nebenbei baue ich die Werkzeuge, die mir in dieser Arbeit fehlen, selbst.
     </p>
 
@@ -558,11 +570,10 @@ main > section[id], main > header[id]{scroll-margin-top:var(--nav-h)}
 <section class="section" id="ansatz">
   <div class="wrap">
     <div class="section__head reveal">
-      <div class="section__kicker" data-en="The common thread">Der rote Faden</div>
       <h2 class="section__title" data-en="The same starting point, eight times">Acht Mal dieselbe Ausgangslage</h2>
-      <p class="section__sub" data-en="Across three employers and eight client projects, the task was almost always to establish a capability the organisation did not yet have — not to optimise one that already existed.">
+      <p class="section__sub" data-en="Across three employers and eight client projects, the task was almost always to establish a capability the organisation did not yet have. Not to optimise one that already existed.">
         Über drei Arbeitgeber und acht Kundenprojekte hinweg lag die Aufgabe fast immer darin, eine
-        Funktion zu etablieren, die es in der Organisation noch nicht gab — nicht darin, eine
+        Funktion zu etablieren, die es in der Organisation noch nicht gab. Nicht darin, eine
         bestehende zu optimieren.
       </p>
     </div>
@@ -627,10 +638,9 @@ main > section[id], main > header[id]{scroll-margin-top:var(--nav-h)}
 <section class="section section--sunk" id="schwerpunkte">
   <div class="wrap">
     <div class="section__head reveal">
-      <div class="section__kicker" data-en="Areas of focus">Fachliche Schwerpunkte</div>
       <h2 class="section__title" data-en="What I get brought in for">Wofür man mich holt</h2>
-      <p class="section__sub" data-en="Six themes that recur across every project — usually where a function or a process does not yet exist.">
-        Sechs Themen, die sich über alle Projekte hinweg wiederholen — meist dort, wo eine Funktion
+      <p class="section__sub" data-en="Six themes that recur across every project, usually where a function or a process does not yet exist.">
+        Sechs Themen, die sich über alle Projekte hinweg wiederholen, meist dort, wo eine Funktion
         oder ein Prozess noch nicht existiert.
       </p>
     </div>
@@ -639,7 +649,7 @@ main > section[id], main > header[id]{scroll-margin-top:var(--nav-h)}
       <article class="focus__card reveal">
         <div class="focus__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></div>
         <h3 data-en="Requirements Engineering &amp; Business Analysis">Requirements Engineering &amp; Business Analyse</h3>
-        <p data-en="Analysis and specification across international system landscapes — from the customer app to the ECU.">Fachliche Analyse und Spezifikation in internationalen Systemlandschaften — von der Kunden-App bis zum Steuergerät.</p>
+        <p data-en="Analysis and specification across international system landscapes, from the customer app to the ECU.">Fachliche Analyse und Spezifikation in internationalen Systemlandschaften, von der Kunden-App bis zum Steuergerät.</p>
       </article>
 
       <article class="focus__card reveal">
@@ -657,13 +667,13 @@ main > section[id], main > header[id]{scroll-margin-top:var(--nav-h)}
       <article class="focus__card reveal">
         <div class="focus__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M10 6.5h4a3 3 0 0 1 3 3V14M6.5 10v4a3 3 0 0 0 3 3H14"/></svg></div>
         <h3 data-en="Delivery Frameworks &amp; Process Design">Vorgehensmodelle &amp; Prozessdesign</h3>
-        <p data-en="Roles, artefacts and decision paths — for instance as a combination of SAFe and systems engineering after an organisational merger.">Rollen, Artefakte und Entscheidungswege — etwa als Kombination aus SAFe und Systems Engineering nach einer Organisationsfusion.</p>
+        <p data-en="Roles, artefacts and decision paths, for instance as a combination of SAFe and systems engineering after an organisational merger.">Rollen, Artefakte und Entscheidungswege, etwa als Kombination aus SAFe und Systems Engineering nach einer Organisationsfusion.</p>
       </article>
 
       <article class="focus__card reveal">
         <div class="focus__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20V8"/></svg></div>
         <h3 data-en="KPI Systems &amp; Steering Metrics">KPI-Systeme &amp; Steuerungsgrößen</h3>
-        <p data-en="Measurable estimation accuracy, cost transparency and partner strategies — a basis for decisions instead of gut feel.">Messbare Schätzgenauigkeit, Kostentransparenz und Partnerstrategien — Grundlage für Entscheidungen statt Bauchgefühl.</p>
+        <p data-en="Measurable estimation accuracy, cost transparency and partner strategies. A basis for decisions instead of gut feel.">Messbare Schätzgenauigkeit, Kostentransparenz und Partnerstrategien. Grundlage für Entscheidungen statt Bauchgefühl.</p>
       </article>
 
       <article class="focus__card reveal">
@@ -679,7 +689,6 @@ main > section[id], main > header[id]{scroll-margin-top:var(--nav-h)}
 <section class="section" id="werdegang">
   <div class="wrap">
     <div class="section__head reveal">
-      <div class="section__kicker" data-en="Professional experience">Beruflicher Werdegang</div>
       <h2 class="section__title" data-en="Career">Stationen</h2>
     </div>
 
@@ -718,7 +727,7 @@ main > section[id], main > header[id]{scroll-margin-top:var(--nav-h)}
             Digitale Kundenlandschaft eines Premium-OEM sowie Systemharmonisierung bei einem weiteren OEM.
           </p>
           <ul class="bullets">
-            <li data-en="Requirements analysis and specification along the digital customer journey — from service scheduling through vehicle configuration to the purchase contract">Anforderungsanalyse und Spezifikation entlang der digitalen Kundenprozesse — von der Werkstattterminierung über die Fahrzeugkonfiguration bis zum Kaufvertrag</li>
+            <li data-en="Requirements analysis and specification along the digital customer journey, from service scheduling through vehicle configuration to the purchase contract">Anforderungsanalyse und Spezifikation entlang der digitalen Kundenprozesse, von der Werkstattterminierung über die Fahrzeugkonfiguration bis zum Kaufvertrag</li>
             <li data-en="Owned rule-based SMS processes (one-time passwords, appointment confirmations, marketing) via an international provider, including compliance with country-specific B2C regulation in demanding markets such as the UAE, South Korea and Thailand">Fachliche Verantwortung für regelbasierte SMS-Prozesse (One-Time-Password, Terminbestätigungen, Marketing) über einen internationalen Provider, inklusive Einhaltung länderspezifischer B2C-Regularien in anspruchsvollen Märkten wie den VAE, Südkorea und Thailand</li>
             <li data-en="Designed a single source of truth spanning the system landscape of a second OEM">Konzeption einer Single Source of Truth über die Systemlandschaft eines weiteren OEM</li>
             <li data-en="Created and standardised templates, specifications and analysis artefacts to improve consistency and traceability">Erstellung und Standardisierung von Templates, Spezifikationen und Analyseartefakten zur Verbesserung von Konsistenz und Nachvollziehbarkeit</li>
@@ -745,7 +754,7 @@ main > section[id], main > header[id]{scroll-margin-top:var(--nav-h)}
         <div class="tl__when">03/2017 – 02/2021</div>
         <div>
           <h3 class="tl__role" data-en="Media and Communication Informatics">Medien- und Kommunikationsinformatik</h3>
-          <p class="tl__org"><b>Hochschule Reutlingen</b> — Bachelor of Science</p>
+          <p class="tl__org"><b>Hochschule Reutlingen</b>, Bachelor of Science</p>
           <p class="tl__ctx" data-en="Bachelor&#x27;s thesis: designing a web application for the Calibration Release Programme at Bosch Engineering.">
             Bachelorarbeit: Konzeptionierung einer Webanwendung für das Calibration Release Programm
             bei Bosch Engineering.
@@ -760,11 +769,10 @@ main > section[id], main > header[id]{scroll-margin-top:var(--nav-h)}
 <section class="section section--sunk" id="projekte">
   <div class="wrap">
     <div class="section__head reveal">
-      <div class="section__kicker" data-en="Project overview">Projektübersicht</div>
       <h2 class="section__title" data-en="Selected projects">Ausgewählte Projekte</h2>
-      <p class="section__sub" data-en="Eight client projects at three OEMs, an automotive software company, a commercial vehicle manufacturer and a financial services provider — plus the working-student years and internal topics. Client names are deliberately anonymised. Filterable by theme.">
+      <p class="section__sub" data-en="Eight client projects at three OEMs, an automotive software company, a commercial vehicle manufacturer and a financial services provider. Plus the working-student years and internal topics. Client names are deliberately anonymised. Filterable by theme.">
         Acht Kundenprojekte bei drei OEMs, einem Automotive-Softwareunternehmen, einem
-        Nutzfahrzeughersteller und einem Finanzdienstleister — dazu die Werkstudentenzeit und
+        Nutzfahrzeughersteller und einem Finanzdienstleister. Dazu die Werkstudentenzeit und
         interne Themen. Kundennamen sind bewusst anonymisiert. Nach Themenschwerpunkt filterbar.
       </p>
     </div>
@@ -831,7 +839,7 @@ main > section[id], main > header[id]{scroll-margin-top:var(--nav-h)}
           <span class="project__sep">·</span><span data-en="6 months">6 Monate</span>
         </div>
         <h3 data-en="Delivery framework, test management and partner strategy after a merger">Vorgehensmodell, Testmanagement und Partnerstrategie nach Organisationsfusion</h3>
-        <p class="project__role" data-en="Lead consultant — subject-matter lead for two consultants">Lead Consultant — fachliche Führung von zwei Consultants</p>
+        <p class="project__role" data-en="Lead consultant, subject-matter lead for two consultants">Lead Consultant, fachliche Führung von zwei Consultants</p>
         <p class="project__ctx" data-en="After a software and a hardware department merged, together comprising over 1,000 people, no shared delivery framework existed.">
           Nach der Fusion einer Software- und einer Hardwareabteilung mit insgesamt über 1.000
           Mitarbeitenden bestand kein gemeinsames Vorgehensmodell.
@@ -919,7 +927,7 @@ main > section[id], main > header[id]{scroll-margin-top:var(--nav-h)}
         <ul class="bullets">
           <li data-en="Analysed, documented and evolved business and technical requirements across an international system landscape">Analyse, Dokumentation und Weiterentwicklung fachlicher und technischer Anforderungen in einer internationalen Systemlandschaft</li>
           <li data-en="Owned rule-based SMS processes via an international provider: one-time passwords, appointment confirmations and marketing messages">Fachliche Verantwortung für regelbasierte SMS-Prozesse über einen internationalen Provider: One-Time-Password, Terminbestätigungen und Marketingnachrichten</li>
-          <li data-en="Worked out and enforced the regulatory requirements for B2C SMS traffic per market to avoid penalties and provider blocks — particular demands in the UAE, South Korea and Thailand">Erarbeitung und Durchsetzung der regulatorischen Anforderungen an B2C-SMS-Verkehr je Markt zur Vermeidung von Strafzahlungen und Providersperrungen — besondere Anforderungen in den VAE, Südkorea und Thailand</li>
+          <li data-en="Worked out and enforced the regulatory requirements for B2C SMS traffic per market to avoid penalties and provider blocks; particular demands in the UAE, South Korea and Thailand">Erarbeitung und Durchsetzung der regulatorischen Anforderungen an B2C-SMS-Verkehr je Markt zur Vermeidung von Strafzahlungen und Providersperrungen; besondere Anforderungen in den VAE, Südkorea und Thailand</li>
           <li data-en="Created and standardised templates, specifications and analysis artefacts">Erstellung und Standardisierung von Templates, Spezifikationen und Analyseartefakten</li>
           <li data-en="The most experienced business analyst on the team by the end of the project, mentoring a junior business analyst">Erfahrenster Business Analyst im Team zum Projektende, fachliches Mentoring eines Junior Business Analysts</li>
         </ul>
@@ -985,7 +993,6 @@ main > section[id], main > header[id]{scroll-margin-top:var(--nav-h)}
 <section class="section" id="kompetenzen">
   <div class="wrap">
     <div class="section__head reveal">
-      <div class="section__kicker" data-en="Skills">Kompetenzen</div>
       <h2 class="section__title" data-en="Methods, certifications and languages">Methoden, Zertifikate und Sprachen</h2>
     </div>
 
@@ -1111,9 +1118,9 @@ main > section[id], main > header[id]{scroll-margin-top:var(--nav-h)}
     <div class="contact__grid">
       <div class="reveal">
         <h2 data-en="Let&#x27;s talk.">Lassen Sie uns sprechen.</h2>
-        <p data-en="Open to conversations about roles in business analysis, process and method work, and agile delivery — in consulting as much as in industry.">
+        <p data-en="Open to conversations about roles in business analysis, process and method work, and agile delivery, in consulting as much as in industry.">
           Offen für Gespräche zu Rollen in Business Analyse, Prozess- und Methodenarbeit sowie agiler
-          Delivery — in der Beratung wie in der Industrie.
+          Delivery, in der Beratung wie in der Industrie.
         </p>
       </div>
       <div class="contact__list reveal">
@@ -1148,16 +1155,16 @@ main > section[id], main > header[id]{scroll-margin-top:var(--nav-h)}
   'use strict';
 
   /* ---- Sprachumschaltung ----
-     Deutsch steht im Markup, Englisch in data-en/-alt/-aria. Der deutsche
+     Deutsch steht im Markup, Englisch in data-en, -alt und -aria. Der deutsche
      Originaltext wird beim ersten Wechsel in einer WeakMap gesichert, damit
      das Dokument nicht mit data-de-Attributen aufgeblaeht wird. */
   var META = {
     de: {
-      titel: 'Filip Stanicak — Senior Consultant | Business Analyse & Agile Delivery',
+      titel: 'Filip Stanicak, Senior Consultant | Business Analyse & Agile Delivery',
       beschreibung: 'Senior Consultant für Business Analyse, Prozessdesign und agile Delivery. Baut Release- und Testmanagement, Vorgehensmodelle und KPI-Systeme dort auf, wo es sie vorher nicht gab. Seit 2019 im Automotive-Umfeld.'
     },
     en: {
-      titel: 'Filip Stanicak — Senior Consultant | Business Analysis & Agile Delivery',
+      titel: 'Filip Stanicak, Senior Consultant | Business Analysis & Agile Delivery',
       beschreibung: 'Senior Consultant for business analysis, process design and agile delivery. Builds release and test management, delivery frameworks and KPI systems where none existed before. In automotive since 2019.'
     }
   };
@@ -1230,12 +1237,15 @@ main > section[id], main > header[id]{scroll-margin-top:var(--nav-h)}
 
   /* ---- Nav: Schatten/Linie beim Scrollen ---- */
   var nav = document.getElementById('nav');
-  var onScroll = function () {
-    if (window.scrollY > 8) nav.classList.add('is-stuck');
-    else nav.classList.remove('is-stuck');
-  };
-  onScroll();
-  window.addEventListener('scroll', onScroll, { passive: true });
+  var marke = document.createElement('div');
+  marke.setAttribute('aria-hidden', 'true');
+  marke.style.cssText = 'position:absolute;top:0;left:0;width:1px;height:8px;pointer-events:none';
+  document.body.insertBefore(marke, document.body.firstChild);
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (eintraege) {
+      nav.classList.toggle('is-stuck', !eintraege[0].isIntersecting);
+    }).observe(marke);
+  }
 
   /* ---- Scroll-Spy für die Navigation ---- */
   var links = Array.prototype.slice.call(document.querySelectorAll('.nav__links a'));
