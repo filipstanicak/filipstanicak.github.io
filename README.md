@@ -2,7 +2,7 @@
 
 Live: https://filipstanicak.github.io/
 
-Statische HTML-Seite ohne Build. `index.html` und der vollständige Ordner `assets/` gehören zusammen. Inter und Newsreader werden lokal aus `assets/fonts/` geladen.
+Statische HTML-Seite ohne Build. `index.html` und der vollständige Ordner `assets/` gehören zusammen. Das Swiss-Design verwendet lokal geladenes Inter, `assets/site.css` und ein SVG-Favicon.
 
 ## Inhalt und Redaktion
 
@@ -14,7 +14,7 @@ Stand: 7. September 2026. Abgeglichen mit den Lebenslaufvarianten AI, Industrie 
 - Vier Beispiele erläutern den Ansatz; Stationen fassen die wichtigsten Beiträge zusammen. Projektbeiträge sind über native `details`-Elemente aufklappbar.
 - Kundennamen bleiben anonymisiert. Telefonnummer und Privatanschrift werden nicht veröffentlicht.
 - Keine separate Sektion für eigene Entwicklungen, entsprechend der bisherigen Entscheidung.
-- Newsreader und die Kupferakzente bleiben erhalten.
+- Swiss-Layout mit Kobaltblau, Schwarzweißporträt, nummerierten Expertise-Zeilen und zwei hervorgehobenen Projekten. Die helle Ansicht ist Standard; die manuelle Dunkel-Auswahl wird gespeichert.
 
 ## Sprachen
 
